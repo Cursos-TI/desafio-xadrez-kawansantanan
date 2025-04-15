@@ -2,13 +2,13 @@
 
 int main(){
 
-    int torre;
-    int bispo = 0;
-    int rainha = 0;
- 
+    int t;
+    int b = 0;
+    int r = 0;
+    int cavalo = 1, c;
     printf("Torre:\n");
 
-    for ( int torre = 0; torre < 5; torre++){
+    for ( int t = 0; t < 5; t++){
         printf("Direita\n");
     }
 
@@ -16,10 +16,10 @@ int main(){
 
     printf("Bispo:\n");
 
-    while (bispo < 5)
+    while (b <= 5)
     {
         printf("Cima, direita\n");
-        bispo++;
+        b++;
     }
     
     printf("\n");
@@ -28,8 +28,21 @@ int main(){
 
     do{
        printf("Esquerda\n");
-       rainha++;
-    } while (rainha < 8);
+       r++;
+    } while (r < 8);
 
+    printf("\n");
+
+    printf("cavalo:\n");
+
+    while(cavalo--){
+        for(c = 0; c < 2; c++ )
+        {
+            printf("Cima\n");
+        }
+        printf("Direita\n");
+        }
+    
+    
     return 0;
 }
